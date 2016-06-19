@@ -1,7 +1,7 @@
 ﻿namespace VkNet.Utils
 {
 	using System;
-	using System.Collections.Generic;
+	using System.Collections;
 	using System.Linq;
 	using System.Net;
 	using System.Reflection;
@@ -44,7 +44,7 @@
 		private void BugFixCookieDomain()
 		{
 			var table =
-				(Dictionary<string, string>)
+				(Hashtable)
 					Container.GetType()
 						.InvokeMember("m_domainTable", BindingFlags.NonPublic | BindingFlags.GetField | BindingFlags.Instance, null, Container, new object[] { });
 
