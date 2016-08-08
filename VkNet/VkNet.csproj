@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{9CB320EE-5F9B-4DF3-9897-C3D20C296DE7}</ProjectGuid>
+    <ProjectGuid>{8B031A92-84D4-4418-8551-18F1AFEECC6C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>VkNet</RootNamespace>
@@ -72,6 +72,7 @@
     <Compile Include="Categories\Obsolete\UsersCategory.Obsolete.cs" />
     <Compile Include="Categories\Obsolete\VideoCategory.Obsolete.cs" />
     <Compile Include="Categories\Obsolete\WallCategory.Obsolete.cs" />
+    <Compile Include="Categories\WallCategory.cs" />
     <Compile Include="Enums\GroupAccess.cs" />
     <Compile Include="Enums\MarketCurrencyId.cs" />
     <Compile Include="Enums\DocFilter.cs" />
@@ -91,10 +92,15 @@
     <Compile Include="Enums\SafetyEnums\PostType.cs" />
     <Compile Include="Model\GroupsCatalogInfo.cs" />
     <Compile Include="Model\MessagesPushSettings.cs" />
+    <Compile Include="Model\RequestParams\Board\BoardCreateCommentParams.cs" />
+    <Compile Include="Model\TopicsFeed.cs" />
+    <Compile Include="Model\RequestParams\Board\BoardGetCommentsParams.cs" />
+    <Compile Include="Model\Topic.cs" />
     <Compile Include="Model\PushSettings.cs" />
     <Compile Include="Model\RequestParams\Account\AccountSaveProfileInfoParams.cs" />
     <Compile Include="Model\RequestParams\Audio\AudioEditParams.cs" />
     <Compile Include="Model\RequestParams\Audio\AudioGetParams.cs" />
+    <Compile Include="Model\RequestParams\Board\BoardGetTopicsParams.cs" />
     <Compile Include="Model\RequestParams\Friends\FriendsGetMutualParams.cs" />
     <Compile Include="Model\RequestParams\Friends\FriendsGetOnlineParams.cs" />
     <Compile Include="Model\RequestParams\Friends\FriendsGetParams.cs" />
@@ -170,7 +176,7 @@
     <Compile Include="Categories\MessagesCategory.cs" />
     <Compile Include="Categories\UtilsCategory.cs" />
     <Compile Include="Categories\VideoCategory.cs" />
-    <Compile Include="Categories\WallCategory.cs" />
+    <Compile Include="Categories\BoardCategory.cs" />
     <Compile Include="Enums\AddFriendStatus.cs" />
     <Compile Include="Enums\AdminLevel.cs" />
     <Compile Include="Enums\Attitude.cs" />
